@@ -15,9 +15,9 @@ pipeline {
           
          steps {
                 echo 'cloning project from GIT'
-                git branch : "seifderbalibranch" ,
+                git branch : "master" ,
 		credentialsId: 'seif' ,
-                url :'https://github.com/majd02/Devops.5SAE2.git'
+                url :'https://github.com/seifderbali/Devops.git'
             }
         }
         stage('MVN CLEAN') {
